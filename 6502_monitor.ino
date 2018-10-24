@@ -21,9 +21,6 @@ void setup() {
   Serial.begin(9600);
 }
 
-String bin = "";
-String lastBin = "";
-
 void loop() {
   delay(100);
   digitalWrite(11, HIGH);
@@ -66,7 +63,7 @@ void loop() {
   Serial.print(address_value, 2);
   Serial.print(" : ");
   Serial.println(address_value, HEX);
-
+  
   digitalWrite(11, LOW);
 }
 
